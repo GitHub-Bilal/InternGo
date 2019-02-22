@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Basic Page Needs==================================================-->
+      <title>InternGo</title>
+	  	<link rel="icon" type="image/png" href="assets/img/title.png">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <!-- CSS==================================================-->
+      <link rel="stylesheet" href="assets/plugins/css/plugins.css">
+      <link href="assets/css/style.css" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" id="jssDefault" href="assets/css/colors/green-style.css">
+	  <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	  <link href="assets/font-awesome/css/all.css" rel="stylesheet">
+	  <link href="assets/font-awesome/css/all.min.css" rel="stylesheet">
+	  	  	  <link href="assets/font-awesome/css/brands.css" rel="stylesheet">
+			  <link href="assets/font-awesome/css/brands.min.css" rel="stylesheet">
+			  <link href="assets/font-awesome/css/fontawesome.css" rel="stylesheet">
+			  <link href="assets/font-awesome/css/regular.css" rel="stylesheet">
+			  <link href="assets/font-awesome/css/regular.min.css" rel="stylesheet">
+			  <link href="assets/font-awesome/css/svg-with-js.css" rel="stylesheet">
+			  <link href="assets/font-awesome/css/svg-with-js.min.css" rel="stylesheet">
+			  <link href="assets/font-awesome/css/v4-shims.css" rel="stylesheet">
+			  <link href="assets/font-awesome/css/v4-shims.min.css" rel="stylesheet">
+			  
+   </head>
+   <body>
+     <div class="logo-bar">
+      <div class="container">
+	    <div class="row">
+         <nav class="navbar navbar-default navbar-fixed navbar-white bootsnav">
+             <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"><i class="fa fa-bars"></i></button>
+			   <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" class="logo logo-display" alt=""><img src="assets/img/logo.png" class="logo logo-scrolled" alt=""></a></div>
+               <div class="collapse navbar-collapse" id="navbar-menu">
+                  <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+					 <li><a href="contact.html"><b>Contact US</b></a></lI>
+                     <li class="dropdown menu-fw">
+                       <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Sign Up</a>
+                        <ul class="dropdown-menu mega-content" role="menu">
+						 <li><a href="student-signup.html"><b>Student Sign Up</b></a></li>
+						  <li><a href="employeer-signup.html"><b>Employeer Sign Up</b></a></li>
+						  </ul>
+						  
+                     <li class="left-br"><a href="javascript:void(0)" data-toggle="modal" data-target="#signup" class="signin">Sign In Now . . . .</a></li>
+                  </ul>
+				  <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+				     <li><a href="index.html"><b>Home</b></a></li>
+                     <li><a href="login.html"><b>About US</b></a></li>
+					 </ul>
+               </div>
+            </div>
+		</div>
+	 </div>
+         </nav>
+		 
+         <!-- Header End --> 
+	<body class="simple-bg-screen" style="background-image:url(assets/img/banner-10.jpg);">
+		<div class="Loader"></div>
+		<div class="wrapper">  
+			
+			<!-- Title Header Start -->
+				<div class="container">
+					<div class="signup-screen">
+					<h1 align="center">Student Sign up</h1>
+						<a href="index.html"><img src="assets/img/logo.png" class="img-responsive" alt=""></a>
+						
+						<form>
+						    <h4>First Name</h4>
+							<input type="text" pattern="[a-zA-Z]+" required title="Numbers " class="form-control" placeholder="First Name">
+							<h4>Last Name</h4>
+							<input type="text" pattern="[a-zA-Z]+" required title="Numbers " class="form-control" placeholder="Last Name">
+							<h4>Email Id</h4>
+							<input type="email"  class="form-control" required placeholder="Your Email">
+							<h4>User Name</h4>
+							<input type="text" pattern="[a-zA-Z0-9]+"  required class="form-control" placeholder="Username">
+							<h4>Password</h4>
+							<input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" class="form-control" placeholder="Password">
+							<h4>Mobile Number</h4>
+							<input type="tel" pattern="^\d{10}" required  title="Please enter a valid 10 digit phone number"class="form-control" placeholder="Mobile Number">
+							<button class="btn btn-login" type="submit" >Sign Up</button>
+							<span>Have You Account? <a href="login.html"> Login</a></span>	
+						</form>
+					</div>
+
+				</div>
+			 <div class="clearfix"></div>
+         <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+            <div class="modal-dialog">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <div class="tab" role="tabpanel">
+                        <ul class="nav nav-tabs" role="tablist">
+                           <li role="presentation" class="active"><a href="index.html#login" role="tab" data-toggle="tab">Student Sign In</a></li>
+                           <li role="presentation"><a href="index.html#register" role="tab" data-toggle="tab">Employeer Sign In</a></li>
+                        </ul>
+                        <div class="tab-content" id="myModalLabel2">
+                           <div role="tabpanel" class="tab-pane fade in active" id="login">
+                              <img src="assets/img/logo.png" class="img-responsive" alt=""/>
+                              <div class="subscribe wow fadeInUp">
+                                 <form class="form-inline" method="post">
+                                    <div class="col-sm-12">
+                                       <div class="form-group">
+                                          <input type="email" name="email" class="form-control" placeholder="Email address" required=""><input type="password" name="password" class="form-control" placeholder="Password" required="">
+                                          <div class="center"><button type="submit" id="login-btn" class="submit-btn"> Login </button></div>
+                                       </div>
+                                    </div>
+                                 </form>
+                              </div>
+                           </div>
+                           <div role="tabpanel" class="tab-pane fade" id="register">
+                              <img src="assets/img/logo.png" class="img-responsive" alt=""/>
+                              <form class="form-inline" method="post">
+                                 <div class="col-sm-12">
+                                    <div class="form-group">
+                                       <input type="email" name="email" class="form-control" placeholder="Email address" required="">
+									   <input type="password" name="password" class="form-control" placeholder="Password" required="">
+                                       <div class="center"><button type="submit" id="subscribe" class="submit-btn"> Login </button></div>
+                                    </div>
+                                 </div>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+			<!-- Scripts
+			================================================== -->
+			<script type="text/javascript" src="assets/plugins/js/jquery.min.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/viewportchecker.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/bootstrap.min.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/bootsnav.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/select2.min.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/wysihtml5-0.3.0.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/bootstrap-wysihtml5.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/datedropper.min.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/dropzone.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/loader.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/owl.carousel.min.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/slick.min.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/gmap3.min.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/jquery.easy-autocomplete.min.js"></script>
+			
+			<!-- Custom Js -->
+			<script src="assets/js/custom.js"></script>
+			<script src="assets/js/jQuery.style.switcher.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$('#styleOptions').styleSwitcher();
+				});
+			</script>
+			<script>
+				function openRightMenu() {
+					document.getElementById("rightMenu").style.display = "block";
+				}
+
+				function closeRightMenu() {
+					document.getElementById("rightMenu").style.display = "none";
+				}
+			</script>
+		</div>
+	</body>
+</html>
