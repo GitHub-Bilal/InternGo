@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Basic Page Needs==================================================-->
+      <title>InternGo</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	  <meta name="author" content="M A BILAL">
+      <!-- CSS==================================================-->
+      <link rel="stylesheet" href="assets/plugins/css/plugins.css">
+      <link href="assets/css/style.css" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" id="jssDefault" href="assets/css/colors/green-style.css">
+	  <!--Font-Awesome========================================---->
+	  <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	  <link href="assets/font-awesome/css/all.css" rel="stylesheet">
+	  <link href="assets/font-awesome/css/all.min.css" rel="stylesheet">
+	  	  	  <link href="assets/font-awesome/css/brands.css" rel="stylesheet">
+			  <link href="assets/font-awesome/css/brands.min.css" rel="stylesheet">
+			  <link href="assets/font-awesome/css/fontawesome.css" rel="stylesheet">
+			  <link href="assets/font-awesome/css/regular.css" rel="stylesheet">
+			  <link href="assets/font-awesome/css/regular.min.css" rel="stylesheet">
+			  <link href="assets/font-awesome/css/svg-with-js.css" rel="stylesheet">
+			  <link href="assets/font-awesome/css/svg-with-js.min.css" rel="stylesheet">
+			  <link href="assets/font-awesome/css/v4-shims.css" rel="stylesheet">
+			  <link href="assets/font-awesome/css/v4-shims.min.css" rel="stylesheet">
+			  
+   </head>
+   <body>
+		<div class="Loader"></div>
+		<div class="wrapper">  
+			 <div class="logo-bar">
+			<!-- Start Navigation -->
+			<nav class="navbar navbar-default navbar-fixed navbar-transparent white bootsnav">
+
+				<div class="container">            
+             <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"><i class="fa fa-bars"></i></button>
+			   <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" class="logo logo-display" alt=""><img src="assets/img/logo.png" class="logo logo-scrolled" alt=""></a></div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+							<li class="dropdown megamenu-fw"><a href="index-employeer.html">Home </a>
+							</li>
+							<li><a href="interns.html">Interns</a></li>
+							<li><a href="aboutus.html">About US </a></li>
+							<li><a href="contactUs.html">Contact US</i></a></li>
+							<li class="dropdown menu-fw">
+                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profile</a>
+                        <ul class="dropdown-menu mega-content" role="menu">
+						 <li><b>User-Name</b></li>
+						 <li><b>Email-Address</b></li>
+						 <li class="divider"></li>
+						  <li><a href="index.html"><b>Log-out </b><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+						   </ul>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>  
+				</div>
+			</nav>
+			<!-- End Navigation -->
+			<div class="clearfix"></div>
+			
+			<!-- Header Title Start -->
+			<section class="inner-header-title blank">
+				<div class="container">
+					<h1>Create Internship</h1>
+				</div>
+			</section>
+			<div class="clearfix"></div>
+			<!-- Header Title End -->
+			
+			<!-- General Detail Start -->
+			<div class="detail-desc section">
+				<div class="container white-shadow">
+				
+					<div class="row">
+					<h3 style="text-align:center;">Upload Logo</h3>
+					<br><br>
+						<div class="detail-pic js">
+							<div class="box">
+								<input type="file" name="upload-pic[]" id="upload-pic" class="inputfile" />
+								<label for="upload-pic"><i class="fa fa-upload" aria-hidden="true"></i><span></span></label>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					
+					<div class="row bottom-mrg">
+						<form class="add-feild">
+							<div class="col-md-6 col-sm-6">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Internship Title">
+								</div>
+							</div>
+							
+							<div class="col-md-6 col-sm-6">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Your Email">
+								</div>
+							</div>
+							
+							<div class="col-md-6 col-sm-6">
+								<div class="input-group">
+									<select class="form-control input-lg">
+										<option>Internship Type</option>
+										<option>Full Time</option>
+										<option>Part Time</option>
+									</select>
+								</div>
+							</div>
+								<div class="col-md-6 col-sm-6">
+								<div class="input-group">
+									<select class="form-control input-lg">
+										<option>Internship Location</option>
+										<option>Work from Home</option>
+										<option>Work from Office</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="No of Vacancies">
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Location,e.g. Chennai, Hyderabad, Bangalore.">
+								</div>
+							</div>
+					        <h4 class="detail-title" style="padding-left:20px;">Choose Start date <span style="padding-left:470px">Choose End date</span></h4>
+							
+							<div class="col-md-6 col-sm-6">
+								<div class="input-group">
+									<input type="text" id="company-dobs" data-lang="en" data-large-mode="true" data-min-year="2019" data-max-year="2020" data-disabled-days="08/17/2017,08/18/2017" data-id="datedropper-0" data-theme="my-style" class="form-control"  readonly="">
+								</div>
+							</div>
+						
+							<div class="col-md-6 col-sm-6">
+								<div class="input-group">
+									<input type="text" id="company-dob" data-lang="en" data-large-mode="true" data-min-year="2019" data-max-year="2020" data-disabled-days="08/17/2019,08/18/2019" data-id="datedropper-0" data-theme="my-style" class="form-control"readonly="">
+								</div>
+							</div>
+							
+							<div class="col-md-12 col-sm-12">
+								<textarea class="form-control" placeholder="Internship Description"></textarea>
+							</div>
+							
+						</form>
+					</div>
+					
+					
+					
+				</div>
+			</div>
+			<!-- General Detail End -->
+			
+			<!-- Basic Full Detail Form Start -->
+			<section class="full-detail">
+				<div class="container">
+					<div class="row bottom-mrg extra-mrg">
+						<form>
+							<h2 class="detail-title">Company Information</h2>
+							
+							<div class="col-md-6 col-sm-6">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-flag"></i></span>
+									<input type="text" class="form-control" placeholder="Company Name">
+								</div>	
+							</div>
+							
+							<div class="col-md-6 col-sm-6">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-pencil"></i></span>
+									<input type="text" class="form-control" placeholder="Company Tagline">
+								</div>	
+							</div>
+							
+							<div class="col-md-6 col-sm-6">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+									<input type="text" class="form-control" placeholder="Company Email">
+								</div>	
+							</div>
+							
+							<div class="col-md-6 col-sm-6">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
+									<input type="text" class="form-control" placeholder="Local E.g. It Park New">
+								</div>	
+							</div>
+							
+							<div class="col-md-6 col-sm-6">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-globe"></i></span>
+									<input type="text" class="form-control" placeholder="Website">
+								</div>	
+							</div>
+							
+							<div class="col-md-6 col-sm-6">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+									<input type="text" id="company-do" data-lang="en" data-large-mode="true" data-min-year="2019" data-max-year="2020" data-disabled-days="08/17/2017,08/18/2017" data-id="datedropper-0" data-theme="my-style" class="form-control" readonly="">
+								</div>	
+							</div>
+							
+						</form>
+					</div>
+					
+					<div class="row bottom-mrg extra-mrg">
+						<form>
+							<h2 class="detail-title">Social Profile</h2>
+							
+							<div class="col-md-6 col-sm-6">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-facebook"></i></span>
+									<input type="text" class="form-control" placeholder="Profile Link">
+								</div>	
+							</div>
+							
+							<div class="col-md-6 col-sm-6">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-google-plus"></i></span>
+									<input type="text" class="form-control" placeholder="Profile Link">
+								</div>	
+							</div>
+							
+							<div class="col-md-6 col-sm-6">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-twitter"></i></span>
+									<input type="text" class="form-control" placeholder="Profile Link">
+								</div>	
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-instagram"></i></span>
+									<input type="text" class="form-control" placeholder="Profile Link">
+								</div>	
+							</div>
+							
+							<div class="col-md-6 col-sm-6">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-linkedin"></i></span>
+									<input type="text" class="form-control" placeholder="Profile Link">
+								</div>	
+							</div>
+							
+							<div class="col-md-6 col-sm-6">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-dribbble"></i></span>
+									<input type="text" class="form-control" placeholder="Profile Link">
+								</div>	
+							</div>
+							
+						</form>
+					</div>
+					
+					<div class="row bottom-mrg extra-mrg">
+						<form>
+							<h2 class="detail-title">Internship Requirement</h2>
+							<div class="col-md-12 col-sm-12">
+								<textarea class="form-control textarea" placeholder="About Company"></textarea>
+							</div>	
+							<div class="col-md-12 col-sm-12">
+								<button class="btn btn-success btn-primary small-btn">Submit your Internship</button>	
+							</div>	
+						</form>
+					</div>
+				</div>
+			</section>
+			<!-- Basic Full Detail Form End -->
+			
+			<!-- Footer Section Start -->
+<footer class="footer">
+            <div class="row lg-menu">
+               <div class="container">
+                  <div class="col-md-4 col-sm-4"><img src="assets/img/logo.png" class="img-responsive" alt=""/> </div>
+            </div>
+            <div class="row no-padding">
+               <div class="container">
+                  <div class="col-md-3 col-sm-12">
+                     <div class="footer-widget">
+                        <h3 class="widgettitle widget-title">About InternGo</h3>
+                        <div class="textwidget">
+                           <p>Tadban Khaja Hills</p>
+                           <p>Hyderabad<br>Telangana, 500064</p>
+                           <p><strong>Email:</strong><a href="mailto:interngo2019@gmail.com"> interngo2019@gmail.com</a></p>
+                           <p><strong>Call:</strong> <a href="tel:+911234567890">1234567890</a></p>
+                           <ul class="footer-social">
+                              <li><a href="index.html#"><i class="fa fa-facebook"></i></a></li>
+                              <li><a href="index.html#"><i class="fa fa-twitter"></i></a></li>
+                              <li><a href="index.html#"><i class="fa fa-linkedin"></i></a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+				  <div class="col-md-3 col-sm-4">
+                  </div>
+				  <div class="col-md-3 col-sm-4">
+                  </div>
+				  <div class="col-md-3 col-sm-4">
+                     <div class="footer-widget">
+                        <h3 class="widgettitle widget-title">Contact Us</h3>
+                        <div class="textwidget">
+                           <form class="footer-form"><input type="text" class="form-control" placeholder="Your Name"> <input type="text" class="form-control" placeholder="Email"><textarea class="form-control" placeholder="Message"></textarea><button type="submit" class="btn btn-primary">Login</button></form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row copyright">
+               <div class="container">
+                  <p>Copyright InternGo © 2019. All Rights Reserved </p>
+               </div>
+            </div>
+         </footer>
+			<div class="clearfix"></div>
+			<!-- Footer Section End -->
+			
+
+			
+			<!-- Scripts
+			================================================== -->
+			<script type="text/javascript" src="assets/plugins/js/jquery.min.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/viewportchecker.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/bootstrap.min.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/bootsnav.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/select2.min.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/wysihtml5-0.3.0.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/bootstrap-wysihtml5.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/datedropper.min.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/dropzone.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/loader.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/owl.carousel.min.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/slick.min.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/gmap3.min.js"></script>
+			<script type="text/javascript" src="assets/plugins/js/jquery.easy-autocomplete.min.js"></script>
+			<!-- Date dropper js-->
+			<script src="http://codeminifier.com/new-Internship-stock/Internship-stock/assets/plugins/date-dropper/datedropper.js"></script>
+			
+			<!-- Custom Js -->
+			<script src="assets/js/custom.js"></script>
+			
+			<script>
+				$('#company-do').dateDropper();
+			</script>
+			<script>
+				$('#company-dobs').dateDropper();
+			</script>
+			<script>
+				$('#company-dob').dateDropper();
+			</script>
+		</div>
+		<script type="text/javascript">
+var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || 
+{widgetcode:"593c0c0adc6936b5e3543e1e5511638592e90d841665b2cbd7dfd57f61da34e6eb57c39c5a35ce647c7720cef2d2aed2", values:{},ready:function(){}};
+var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
+s.src="https://salesiq.zoho.in/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+</script>
+	</body>
+</html>

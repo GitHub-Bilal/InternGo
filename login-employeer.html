@@ -1,16 +1,13 @@
 <!doctype html>
-<html lang="en">
    <head>
       <!-- Basic Page Needs==================================================-->
       <title>InternGo</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	  <meta name="author" content="M A BILAL">
       <!-- CSS==================================================-->
       <link rel="stylesheet" href="assets/plugins/css/plugins.css">
       <link href="assets/css/style.css" rel="stylesheet">
       <link type="text/css" rel="stylesheet" id="jssDefault" href="assets/css/colors/green-style.css">
-	  <!--Font-Awesome========================================---->
 	  <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	  <link href="assets/font-awesome/css/all.css" rel="stylesheet">
 	  <link href="assets/font-awesome/css/all.min.css" rel="stylesheet">
@@ -25,70 +22,27 @@
 			  <link href="assets/font-awesome/css/v4-shims.min.css" rel="stylesheet">
 			  
    </head>
-   <body>
-		<div class="Loader"></div>
-		<div class="wrapper">  
-			 <div class="logo-bar">
-			<!-- Start Navigation -->
-			<nav class="navbar navbar-default navbar-fixed navbar white bootsnav">
-
-				<div class="container">            
-             <div class="navbar-header">
-               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"><i class="fa fa-bars"></i></button>
-			   <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" class="logo logo-display" alt=""><img src="assets/img/logo.png" class="logo logo-scrolled" alt=""></a></div>
-
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse" id="navbar-menu">
-						<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-							<li class="dropdown megamenu-fw"><a href="index.html">Home </a>
-							</li>
-							<li><a href="internships.html">Internships </a></li>
-							<li><a href="about.html">About US </a></li>
-							<li><a href="contact.html">Contact US</i></a></li>
-							<li class="dropdown menu-fw">
-                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign Up</a>
-                        <ul class="dropdown-menu mega-content" role="menu">
-						 <li><a href="student-signup.html"><b>Student Sign Up</b></a></li>
-						  <li><a href="employeer-signup.html"><b>Employeer Sign Up</b></a></li>
-						  </ul>
-						</ul>
-					</div><!-- /.navbar-collapse -->
-				</div>  
-				</div>
-			</nav>
-			<!-- End Navigation -->
-		 
-		 
-         <!-- Header End --> 
 	<body class="simple-bg-screen" style="background-image:url(assets/img/banner-10.jpg);">
 		<div class="Loader"></div>
 		<div class="wrapper">  
 			
 			<!-- Title Header Start -->
+			<section class="login-screen-sec">
 				<div class="container">
-					<div class="signup-screen">
-					<h1 align="center">Student Sign up</h1>
+					<div class="login-screen">
+					
 						<a href="index.html"><img src="assets/img/logo.png" class="img-responsive" alt=""></a>
-						
 						<form>
-						    <h4>First Name</h4>
-							<input type="text" pattern="[a-zA-Z]+" required title="Numbers " class="form-control" placeholder="First Name">
-							<h4>Last Name</h4>
-							<input type="text" pattern="[a-zA-Z]+" required title="Numbers " class="form-control" placeholder="Last Name">
-							<h4>Email Id</h4>
-							<input type="email"  class="form-control" required placeholder="Your Email">
-							<h4>User Name</h4>
-							<input type="text" pattern="[a-zA-Z0-9]+"  required class="form-control" placeholder="Username">
-							<h4>Password</h4>
-							<input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" class="form-control" placeholder="Password">
-							<h4>Mobile Number</h4>
-							<input type="tel" pattern="^\d{10}" required  title="Please enter a valid 10 digit phone number"class="form-control" placeholder="Mobile Number">
-							<button class="btn btn-login" type="submit" formaction="index-student.html" >Sign Up</button>
-							<span>Have You Account? <a href="login-student.html"> Login</a></span>	
+							<input type="email" class="form-control" placeholder="Email" required>
+							<input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="form-control" placeholder="Password" title="Invalid password" required>
+							<center>
+							<button class="btn btn-primary" style="border-radius:50px;" type="submit" formaction="index-employeer.html">Login as Employeer</button></center>
+							<span>You Have No Account? <a href="employeer-signup.html"> Create An Account</a></span>
+							<span><a href="lost-password.html"> Forget Password</a></span>
 						</form>
 					</div>
-
 				</div>
+			</section>			
 			<!-- Scripts
 			================================================== -->
 			<script type="text/javascript" src="assets/plugins/js/jquery.min.js"></script>

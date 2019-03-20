@@ -3,13 +3,14 @@
    <head>
       <!-- Basic Page Needs==================================================-->
       <title>InternGo</title>
-	  	<link rel="icon" type="image/png" href="assets/img/title.png">
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	  <meta name="author" content="M A BILAL">
       <!-- CSS==================================================-->
       <link rel="stylesheet" href="assets/plugins/css/plugins.css">
       <link href="assets/css/style.css" rel="stylesheet">
       <link type="text/css" rel="stylesheet" id="jssDefault" href="assets/css/colors/green-style.css">
+	  <!--Font-Awesome========================================---->
 	  <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	  <link href="assets/font-awesome/css/all.css" rel="stylesheet">
 	  <link href="assets/font-awesome/css/all.min.css" rel="stylesheet">
@@ -25,34 +26,38 @@
 			  
    </head>
    <body>
-     <div class="logo-bar">
-      <div class="container">
-	    <div class="row">
-         <nav class="navbar navbar-default navbar-fixed navbar-white bootsnav">
+		<div class="Loader"></div>
+		<div class="wrapper">  
+			 <div class="logo-bar">
+			<!-- Start Navigation -->
+			<nav class="navbar navbar-default navbar-fixed navbar white bootsnav">
+
+				<div class="container">            
              <div class="navbar-header">
                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"><i class="fa fa-bars"></i></button>
 			   <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" class="logo logo-display" alt=""><img src="assets/img/logo.png" class="logo logo-scrolled" alt=""></a></div>
-               <div class="collapse navbar-collapse" id="navbar-menu">
-                  <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-					 <li><a href="contact.html"><b>Contact US</b></a></lI>
-                     <li class="dropdown menu-fw">
-                       <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Sign Up</a>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+							<li class="dropdown megamenu-fw"><a href="index.html">Home </a>
+							</li>
+							<li><a href="internships.html">Internships </a></li>
+							<li><a href="about.html">About US </a></li>
+							<li><a href="contact.html">Contact US</i></a></li>
+							<li class="dropdown menu-fw">
+                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign Up</a>
                         <ul class="dropdown-menu mega-content" role="menu">
 						 <li><a href="student-signup.html"><b>Student Sign Up</b></a></li>
 						  <li><a href="employeer-signup.html"><b>Employeer Sign Up</b></a></li>
 						  </ul>
-						  
-                     <li class="left-br"><a href="javascript:void(0)" data-toggle="modal" data-target="#signup" class="signin">Sign In Now . . . .</a></li>
-                  </ul>
-				  <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-				     <li><a href="index.html"><b>Home</b></a></li>
-                     <li><a href="login.html"><b>About US</b></a></li>
-					 </ul>
-               </div>
-            </div>
-		</div>
-	 </div>
-         </nav>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>  
+				</div>
+			</nav>
+			<!-- End Navigation -->
+		 
 		 
          <!-- Header End --> 
 	<body class="simple-bg-screen" style="background-image:url(assets/img/banner-10.jpg);">
@@ -78,54 +83,12 @@
 							<input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" class="form-control" placeholder="Password">
 							<h4>Mobile Nuber</h4>
 							<input type="tel" pattern="^\d{10}" required  title="Please enter a valid 10 digit phone number"class="form-control" placeholder="Mobile Number">
-							<button class="btn btn-login" type="submit" >Sign Up</button>
-							<span>Have You Account? <a href="login.html"> Login</a></span>	
+							<button class="btn btn-login" type="submit" formaction="index-employeer.html" >Sign Up</button>
+							<span>Have You Account? <a href="login-employeer.html"> Login</a></span>	
 						</form>
 					</div>
 
 				</div>
-				 <div class="clearfix"></div>
-         <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
-            <div class="modal-dialog">
-               <div class="modal-content">
-                  <div class="modal-body">
-                     <div class="tab" role="tabpanel">
-                        <ul class="nav nav-tabs" role="tablist">
-                           <li role="presentation" class="active"><a href="index.html#login" role="tab" data-toggle="tab">Student Sign In</a></li>
-                           <li role="presentation"><a href="index.html#register" role="tab" data-toggle="tab">Employeer Sign In</a></li>
-                        </ul>
-                        <div class="tab-content" id="myModalLabel2">
-                           <div role="tabpanel" class="tab-pane fade in active" id="login">
-                              <img src="assets/img/logo.png" class="img-responsive" alt=""/>
-                              <div class="subscribe wow fadeInUp">
-                                 <form class="form-inline" method="post">
-                                    <div class="col-sm-12">
-                                       <div class="form-group">
-                                          <input type="email" name="email" class="form-control" placeholder="Email address" required=""><input type="password" name="password" class="form-control" placeholder="Password" required="">
-                                          <div class="center"><button type="submit" id="login-btn" class="submit-btn"> Login </button></div>
-                                       </div>
-                                    </div>
-                                 </form>
-                              </div>
-                           </div>
-                           <div role="tabpanel" class="tab-pane fade" id="register">
-                              <img src="assets/img/logo.png" class="img-responsive" alt=""/>
-                              <form class="form-inline" method="post">
-                                 <div class="col-sm-12">
-                                    <div class="form-group">
-                                       <input type="email" name="email" class="form-control" placeholder="Email address" required="">
-									   <input type="password" name="password" class="form-control" placeholder="Password" required="">
-                                       <div class="center"><button type="submit" id="subscribe" class="submit-btn"> Login </button></div>
-                                    </div>
-                                 </div>
-                              </form>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
 			
 			<!-- Scripts
 			================================================== -->
@@ -143,24 +106,12 @@
 			<script type="text/javascript" src="assets/plugins/js/slick.min.js"></script>
 			<script type="text/javascript" src="assets/plugins/js/gmap3.min.js"></script>
 			<script type="text/javascript" src="assets/plugins/js/jquery.easy-autocomplete.min.js"></script>
-			
-			<!-- Custom Js -->
-			<script src="assets/js/custom.js"></script>
-			<script src="assets/js/jQuery.style.switcher.js"></script>
-			<script type="text/javascript">
-				$(document).ready(function() {
-					$('#styleOptions').styleSwitcher();
-				});
-			</script>
-			<script>
-				function openRightMenu() {
-					document.getElementById("rightMenu").style.display = "block";
-				}
-
-				function closeRightMenu() {
-					document.getElementById("rightMenu").style.display = "none";
-				}
-			</script>
 		</div>
+		<script type="text/javascript">
+var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || 
+{widgetcode:"593c0c0adc6936b5e3543e1e5511638592e90d841665b2cbd7dfd57f61da34e6eb57c39c5a35ce647c7720cef2d2aed2", values:{},ready:function(){}};
+var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
+s.src="https://salesiq.zoho.in/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+</script>
 	</body>
 </html>

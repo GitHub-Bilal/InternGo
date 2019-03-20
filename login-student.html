@@ -1,15 +1,10 @@
 <!doctype html>
-<html lang="en">
-<head>
-	<!-- Basic Page Needs
-	================================================== -->
-	<title>InternGo</title>
-	<link rel="icon" type="image/png" href="assets/img/title.png">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!-- CSS
-  <!-- CSS==================================================-->
+   <head>
+      <!-- Basic Page Needs==================================================-->
+      <title>InternGo</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <!-- CSS==================================================-->
       <link rel="stylesheet" href="assets/plugins/css/plugins.css">
       <link href="assets/css/style.css" rel="stylesheet">
       <link type="text/css" rel="stylesheet" id="jssDefault" href="assets/css/colors/green-style.css">
@@ -26,36 +21,7 @@
 			  <link href="assets/font-awesome/css/v4-shims.css" rel="stylesheet">
 			  <link href="assets/font-awesome/css/v4-shims.min.css" rel="stylesheet">
 			  
-	</head>
-	<div class="logo-bar">
-      <div class="container">
-	    <div class="row">
-         <nav class="navbar navbar-default navbar-fixed navbar-white bootsnav">
-             <div class="navbar-header">
-               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"><i class="fa fa-bars"></i></button>
-			   <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" class="logo logo-display" alt=""><img src="assets/img/logo.png" class="logo logo-scrolled" alt=""></a></div>
-               <div class="collapse navbar-collapse" id="navbar-menu">
-                  <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-					 <li><a href="contact.html"><b>Contact US</b></a></lI>
-                     <li class="dropdown menu-fw">
-                       <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Sign Up</a>
-                        <ul class="dropdown-menu mega-content" role="menu">
-						 <li><a href="student-signup.html"><b>Student Sign Up</b></a></li>
-						  <li><a href="employeer-signup.html"><b>Employeer Sign Up</b></a></li>
-						  </ul>
-						  
-                     <li class="left-br"><a href="javascript:void(0)" data-toggle="modal" data-target="#signup" class="signin">Sign In Now . . . . . . </a></li>
-                  </ul>
-				  <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-				     <li><a href="index.html"><b>Home</b></a></li>
-                     <li><a href="login.html"><b>About US</b></a></li>
-					 </ul>
-               </div>
-            </div>
-		</div>
-	 </div>
-         </nav>
-		 
+   </head>
 	<body class="simple-bg-screen" style="background-image:url(assets/img/banner-10.jpg);">
 		<div class="Loader"></div>
 		<div class="wrapper">  
@@ -66,16 +32,16 @@
 					<div class="login-screen">
 						<a href="index.html"><img src="assets/img/logo.png" class="img-responsive" alt=""></a>
 						<form>
-							<input type="text" class="form-control" placeholder="Useraname">
-							<input type="password" class="form-control" placeholder="Password">
-							<button class="btn btn-login" type="submit">Login</button>
-							<span>You Have No Account? <a href="signup.html"> Create An Account</a></span>
+							<input type="email" class="form-control" placeholder="Email" required>
+							<input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Invalid password" class="form-control" placeholder="Password" required>
+							<center>
+							<button class="btn btn-primary" type="submit" style="border-radius:50px;" formaction="index-student.html">Login as Student</button><center>
+							<span>You Have No Account? <a href="student-signup.html"> Create An Account</a></span>
 							<span><a href="lost-password.html"> Forget Password</a></span>
 						</form>
 					</div>
 				</div>
-			</section>
-			
+			</section>			
 			<!-- Scripts
 			================================================== -->
 			<script type="text/javascript" src="assets/plugins/js/jquery.min.js"></script>
@@ -111,5 +77,11 @@
 				}
 			</script>
 		</div>
+		<script type="text/javascript">
+var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || 
+{widgetcode:"593c0c0adc6936b5e3543e1e5511638592e90d841665b2cbd7dfd57f61da34e6eb57c39c5a35ce647c7720cef2d2aed2", values:{},ready:function(){}};
+var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
+s.src="https://salesiq.zoho.in/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+</script>
 	</body>
 </html>
